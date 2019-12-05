@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "clsx": "^1.0.4",
-    "reakit": "^1.0.0-beta.8",
+    "reakit": "^1.0.0-beta.13",
     "styled-components": "^4.4.0"
   }
 }
