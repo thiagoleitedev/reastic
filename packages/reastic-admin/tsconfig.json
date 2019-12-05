@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -15,13 +19,7 @@
     "noEmit": true,
     "jsx": "preserve"
   },
-  "paths": {
-    "@reastic/components": ["./packages/restic-components/src"],
-    "@reastic/components/*": ["./packages/restic-components/src/*"],
-
-    "@reastic/admin": ["./packages/restic-admin/src/*"],
-    "@reastic/admin/*": ["./packages/restic-admin/src/*"]
-  },
-  "include": ["src"],
-  "exclude": ["**/build/"]
+  "include": [
+    "src"
+  ]
 }
