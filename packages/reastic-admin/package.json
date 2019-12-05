@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@reastic/components": "file:.yalc/@reastic/components",
+    "@reastic/components": "0.0.1",
     "@types/jest": "24.0.17",
     "@types/node": "12.7.1",
     "@types/react": "16.9.0",
