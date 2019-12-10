@@ -1,14 +1,22 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import { Button } from '@reastic/components';
 
-const theme = {};
+const Ss = styled.div`
+  background: yellow;
+`;
+
+// const theme = {};
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Button>1111</Button>
-    </ThemeProvider>
+    // <ThemeProvider theme={theme}>
+    <div>
+      <Ss />
+      <Button />
+    </div>
+    /* </ThemeProvider> */
   );
 };
 
