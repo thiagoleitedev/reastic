@@ -1,21 +1,6 @@
 {
-  "presets": [
-    "@babel/typescript",
-    "@babel/react",
-    [
-      "@babel/env",
-      {
-        "useBuiltIns": "usage"
-      }
-    ]
-  ],
+  "presets": ["@babel/typescript", "@babel/react", ["@babel/env"]],
   "plugins": [
-    [
-      "@babel/plugin-proposal-decorators",
-      {
-        "legacy": true
-      }
-    ],
     "@babel/plugin-proposal-class-properties",
     [
       "styled-components",
