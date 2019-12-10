@@ -2,15 +2,24 @@
   "name": "@reastic/components",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.tsx",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf lib/* && tsc && babel src --extensions \".es6,.js,.es,.mjs,.ts,.tsx\" --out-dir lib --no-comments",
+    "build:watch": "yarn tsc && babel src --extensions \".es6,.js,.es,.mjs,.ts,.tsx\" --out-dir lib --no-comments --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "clsx": "^1.0.4",
     "reakit": "^1.0.0-beta.13",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.1",
+    "styled-system": "^5.1.4",
+    "styled-theming": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/styled-theming": "^2.2.2",
+    "webpack-bundle-analyzer": "^3.6.0"
   }
 }
